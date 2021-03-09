@@ -3,15 +3,13 @@ function darkMode() {
     element.classList.toggle("dark-mode");
     let btnText = document.getElementById('dmBtn');
 
-    // todo: get the button to change class on click so the colors change on dark mode to be more visible
-
-    let btnClass = document.getElementsByClassName('btn');
-
     if (btnText.innerHTML == "Turn Dark Mode ON") {
         btnText.innerHTML = "Turn Dark Mode OFF";
-        btnClass = "btn-dm";
+        btnText.classList.add('btn-dm');
+        btnText.classList.remove('btn');
     } else {
         btnText.innerHTML = "Turn Dark Mode ON";
-        btnClass = "btn";
+        btnText.classList.add('btn');
+        btnText.classList.remove('btn-dm');
     }
 }
