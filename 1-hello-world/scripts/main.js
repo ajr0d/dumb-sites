@@ -14,6 +14,12 @@ function darkMode() {
     }
 }
 
+let username = prompt("What's your name?", "Computer");
+
+if (username != null) {
+    document.getElementById("username").innerHTML = username + ".World";
+}
+
 
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("modalPopup");
